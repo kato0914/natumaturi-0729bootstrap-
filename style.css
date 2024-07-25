@@ -203,3 +203,30 @@ main {
     margin: 20px 0;
     border-top-color: #555; /* 区切り線の色を変更 */
 }
+
+/* style.css */
+@media (max-width: 768px) {
+    .about-section .row {
+        flex-direction: column; /* 縦に並べる */
+    }
+    .about-section .row:first-of-type {
+        order: 1; /* 最初のrowの順序を先に設定 */
+    }
+    .about-section .row:last-of-type {
+        order: 2; /* 2番目のrowの順序を後に設定 */
+    }
+    .about-section .col-lg-5 {
+        order: 2; /* テキストの順序を後に設定 */
+    }
+    .about-section .col-lg-7 {
+        order: 1; /* 画像の順序を先に設定 */
+    }
+    p{
+        margin-top: 2rem;
+        margin-bottom: 0;
+    }
+}
+
+.mb-5{
+    margin-bottom: 0!important;
+}
